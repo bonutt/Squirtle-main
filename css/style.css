@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #A3C1DA;
+    --secondary-color: #1882d8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-inline: 64px;
+    background: linear-gradient(var(--primary-color), #A3E1E6);
+    font-family: 'Righteous', cursive;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.pokebola {
+    width: 2.5rem;
+    margin: 10px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container--title {
+    position: relative;
+    text-align: center;
+}
+
+.title--text {
+    font-size: 20vw;
+    color: black;
+}
+
+.title--transparent {
+    position: absolute;
+    font-size: 25vw;
+    top: -30%;
+    left: 1vw;
+    opacity: 0.3;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.container div{
+    width: 55%;
+    z-index: 1;
+}
+
+.container h2 {
+    font-size: 4vh;
+    color: black;
+    text-align: start;
+    margin: 10px;
+}
+
+.container p{
+    font-size: 2vh;
+    width: 35vw;
+    color: white;
+}
+
+.action{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+}
+
+.action button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #0075BE, #1A73E8); /* Gradiente de azul */
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-right: 15px;
+}
+
+.squirtle--image {
+    position: absolute;
+    top: 65%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+}
+
+/* TABLET */
+@media (max-width: 960px) {
+    body{
+        padding-inline: 30px;
+        padding-bottom: 32px;
+    }
+    main{
+        justify-content: space-between;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 10px
+    }
+    .container p {
+        width: 100%
+    }
+    .container div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px
+    }
+    footer{
+        display: none;
+    }
+
+    .squirtle--image {
+        top: 60%;
+        height: 40vh;
+    }
+}
+
+
+/* TABLET */
+@media (max-width: 960px) {
+    body {
+        padding: 0 30px;
+        padding-bottom: 32px;
+    }
+    main {
+        justify-content: space-between;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .container p {
+        display: none;
+    }
+    .squirtle--image {
+        height: 40vh; 
+        margin-top: 10px; 
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    header {
+        display: none;
+    }
+    .container div {
+        width: 100%;
+    }
+    .container p {
+        display: none;
+    }
+    .container h2 {
+        font-size: 32px;
+    }
+    .squirtle--image {
+        height: auto; 
+        margin-top: 5px; 
+    }
+}
+.container--title1 {
+    position: relative;
+    text-align: center;
+}
+.title--text1 {
+    font-size: 15vw;
+    color: black;
+}
+
+.title--transparent1 {
+    position: absolute;
+    font-size: 19vw;
+    top: -30%;
+    left: 1vw;
+    opacity: 0.3;
+}
+.container--title2 {
+    position: relative;
+    text-align: center;
+}
+.title--text2 {
+    font-size: 15vw;
+    color: black;
+}
+
+.title--transparent2 {
+    position: absolute;
+    font-size: 18vw;
+    top: -30%;
+    left: 9vw;
+    opacity: 0.3;
+}
